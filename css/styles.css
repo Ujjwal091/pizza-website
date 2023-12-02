@@ -1,0 +1,622 @@
+/*
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+    universal selector (*) matches elements of any type.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "inter", serif;
+}
+
+
+/*
+    https://www.w3schools.com/css/css_selectors.asp
+    id selector(#) select element with id = banner
+    https://www.w3schools.com/cssref/pr_background-image.php
+    setting the main banner image
+*/
+#banner {
+    background-image: url("../images/banner/main-banner.jpeg");
+    width: 100%;
+    height: 32vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+    https://www.w3schools.com/css/css_selectors.asp
+    class selector(.) selects elements with class = intro
+*/
+.intro {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+
+.about-banner {
+    width: 80vw;
+    border-radius: 30px;
+    height: 60vh;
+    background-image: url("../images/banner/about-banner.jpeg");
+    margin: auto auto 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#about-us {
+    text-align: center;
+    color: black;
+    display: none;
+}
+
+#links {
+    display: none;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 50px;
+}
+
+
+/*
+https://www.w3schools.com/css/css_combinators.asp
+The descendant selector matches all elements that are descendants of a specified element.
+*/
+#links a {
+    text-decoration: none;
+}
+
+.top-nav-button {
+    background-color: rgb(196, 69, 69);
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 100vw;
+    vertical-align: middle;
+    font-size: large;
+    font-weight: 400;
+    padding: 5px 20px;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+
+#top-nav a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+#top-nav img {
+    width: 30vw;
+    height: 30vw;
+}
+
+#top-nav div {
+    display: inline-block;
+}
+
+/*
+https://www.w3schools.com/css/css_selectors.asp
+css grouping selector
+*/
+#top-nav .first-container,
+#top-nav .third-container {
+    width: 30vw;
+    text-align: center;
+}
+
+#top-nav .third-container {
+    width: 35vw;
+}
+
+
+/*
+https://www.w3schools.com/css/css_grid.asp
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+*/
+#top-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: -18vw;
+}
+
+#order-now-btn {
+    font-size: xx-large;
+    padding: 10px 25px;
+    font-weight: 500;
+}
+
+.about-text {
+    width: 50vw;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.timer {
+    /* border-radius: 20px; */
+    width: fit-content;
+    margin: auto;
+}
+
+.timer div {
+    background-color: rgb(196, 69, 69);
+    color: white;
+    font-size: x-large;
+    display: inline-block;
+    padding: 15px 10px;
+    width: 110px;
+    text-align: center;
+}
+
+#pick-up {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+
+#time {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+#hamburger-icon div {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: rgb(196, 69, 69);
+    margin: 6px 0;
+}
+
+#hamburger-icon {
+    margin-left: auto;
+    margin-right: 10%;
+
+    display: none !important;
+}
+
+
+/*
+https://www.w3schools.com/cssref/sel_nth-child.php
+css pseudo class selector select all the even children of div having id "hamburger-icon"
+*/
+#hamburger-icon div:nth-child(even) {
+    width: 15px;
+}
+
+.menu-categories-btn a {
+    text-decoration: none;
+}
+
+.menu-categories-btn {
+    width: fit-content;
+    margin: auto
+}
+
+.item img {
+    width: 35vw;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    align-items: center;
+}
+
+.content-info {
+    font-weight: 600;
+    text-align: center;
+}
+
+.menu-items {
+    width: 98.9vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10vh;
+}
+
+.order-items {
+    width: 98.9vw;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.order-single-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-single-item p {
+    width: 15vw;
+    margin-right: 8vw;
+}
+
+.order-now {
+    font-size: 25px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.order-items input {
+    margin-left: 25px;
+}
+
+.order-items a {
+    display: inline-block;
+    background-color: rgb(196, 69, 69);
+    border: none;
+    font-size: 20px;
+    padding: 17px;
+    margin: 10px 10px 40px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.toppings {
+    background-color: rgb(196, 69, 69);
+    padding: 20px 20px 20px 0;
+    border-radius: 20px;
+    height: fit-content;
+    color: white;
+    text-align: left;
+    margin: 5px;
+}
+
+.toppings h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+/*
+https://www.w3schools.com/css/css_attribute_selectors.asp
+attribute selector select input element having type = "checkbox"
+*/
+input[type=checkbox] {
+    accent-color: #fbc188;
+}
+
+
+.container {
+    width: fit-content;
+    border-radius: 15px;
+}
+
+.row p {
+    padding: 20px
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+/*
+https://www.w3schools.com/css/css_selectors.asp
+css element selector select all the elements of specific name
+*/
+label {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.row input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+label span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 3px solid rgb(196, 69, 69);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/*
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#what_is_a_pseudo-element
+pseudo element selector
+*/
+label span::after {
+    content: '';
+    position: absolute;
+    left: 24px;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border: solid rgb(196, 69, 69);
+    border-width: 0 6px 6px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+input:checked ~ span::after {
+    width: 20px;
+    height: 40px;
+    opacity: 1;
+}
+
+/* mobile phone */
+@media screen and (max-width: 480px) {
+    .third-container {
+        display: none !important;
+    }
+
+    #hamburger-icon {
+        display: inline-block !important;
+    }
+
+    #top-nav img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #about-us {
+        display: block;
+        text-align: center;
+    }
+
+    #top-nav {
+        margin-top: -35vw;
+    }
+
+    #order-now-btn {
+        font-size: small;
+        padding: 3px 7px;
+        font-weight: 300;
+    }
+
+    .about-banner {
+        height: 25vh;
+    }
+
+    .item {
+        flex-direction: column;
+        align-self: center;
+        width: 100vw;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item img {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+
+    .item p {
+        padding: 0 15vw;
+    }
+
+    .top-nav-button {
+        padding: 5px 8px;
+        font-size: medium;
+
+    }
+
+    .order-single-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .order-single-item img,
+    .order-single-item p {
+        width: 90vw;
+        text-align: center;
+        margin: auto
+    }
+
+    .about-text {
+        width: 70vw;
+    }
+
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries*/
+/*Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width
+*/
+
+/*
+481px — 768px: iPads, Tablets
+*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .third-container {
+        display: none !important;
+    }
+
+    #hamburger-icon {
+        display: inline-block !important;
+    }
+
+    #top-nav img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #about-us {
+        display: block;
+        text-align: center;
+    }
+
+    #top-nav {
+        margin-top: -28vw;
+    }
+
+    #order-now-btn {
+        font-size: medium;
+        padding: 5px 10px;
+        font-weight: 400;
+    }
+
+    .about-banner {
+        height: 30vh;
+    }
+
+    .item {
+        flex-direction: column;
+        align-self: center;
+        width: 100vw;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item img {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+
+    .top-nav-button {
+        padding: 5px 8px;
+    }
+
+    .hamburger-icon {
+        display: none;
+        align-items: flex-end;
+        /* float: left; */
+    }
+
+    .order-single-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .order-single-item img,
+    .order-single-item p {
+        width: 90vw;
+        text-align: center;
+        margin: auto
+    }
+
+    .about-text {
+        width: 60vw;
+    }
+}
+
+/* 
+for devices such as tablets, ipads 
+*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .third-container {
+        display: none !important;
+    }
+
+    #hamburger-icon {
+        display: inline-block !important;
+    }
+
+    #top-nav {
+        margin-top: -35vw;
+        grid-template-columns: 2fr 3fr 2fr;
+    }
+
+    #top-nav img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #order-now-btn {
+        font-size: large;
+        padding: 7px 20px;
+        font-weight: 500;
+    }
+
+    #about-us {
+        display: none;
+    }
+
+
+    .about-banner {
+        height: 40vh;
+    }
+
+    .item {
+        flex-direction: column;
+        align-self: center;
+        width: 100vw;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item img {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+
+    .top-nav-button {
+        padding: 5px 8px;
+    }
+
+    .hamburger-icon {
+        display: none;
+        align-items: flex-end;
+        /* float: left; */
+    }
+
+    .order-single-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .order-single-item img,
+    .order-single-item p {
+        width: 90vw;
+        text-align: center;
+        margin: auto
+    }
+}
+
+/*
+for large devices such as laptops
+*/
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #top-nav {
+        margin-top: -20vw;
+    }
+}

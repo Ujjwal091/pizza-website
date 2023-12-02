@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Set the browser compatibility to the latest version -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set the viewport width to the device's width and scale it to 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to an external CSS stylesheet -->
+    <!-- https://www.w3schools.com/css/css_howto.asp -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Set the title of the page -->
+    <title>The Herbie Pie</title>
+    <!-- Link to an external JavaScript file -->
+    <!-- https://www.w3schools.com/js/js_whereto.asp -->
+    <script src="button.js"></script>
+</head>
+
+<body>
+<!-- Define a banner div -->
+<div id="banner"></div>
+
+<!-- Define a navigation bar -->
+<nav id="top-nav">
+    <!-- Define a container for the order button -->
+    <div class="first-container">
+        <a class="top-nav-button" id="order-now-btn" href="./html/order.html">Order&nbsp;Now</a>
+    </div>
+
+    <!-- Define a logo image -->
+    <div id="logo"><img src="./images/banner/logo.png" alt=""/></div>
+
+    <!-- Define containers for the Home, Menu, and About links -->
+    <div class="third-container">
+        <a class="top-nav-button " href="./index.html">Home</a>
+        <a class="top-nav-button" href="./html/menu-pizza.html">Menu</a>
+        <a class="top-nav-button" href="./html/about.html">About</a>
+    </div>
+
+    <!-- Define a hamburger icon that triggers a function when clicked -->
+    <!-- onClick event calls function "hideShow()" whenever div is clicked -->
+    <div id="hamburger-icon" onclick="hideShow()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</nav>
+
+<!-- Define navigation links for small devices -->
+<div id="links">
+    <a class="top-nav-button selected" href="./index.html">Home</a>
+    <a class="top-nav-button " href="./html/menu-pizza.html">Menu</a>
+    <a class="top-nav-button" href="./html/about.html">About</a>
+</div>
+
+<!-- Define a title line -->
+<p class="intro">
+    London's Best<br/>
+    Plant Based<br/>
+    Pizza<br/>
+</p>
+
+<!-- Define a banner div for the About section -->
+<div class="about-banner"></div>
+<!-- Define a link to the About page -->
+<a id="about-us" href="./html/about.html">About us</a>
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Start of head section -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Menu | Drinks</title>
+    <script src="../button.js"></script>
+    <!-- End of head section -->
+</head>
+
+
+<body>
+<div id="banner"></div>
+
+<nav id="top-nav">
+    <div class="first-container">
+        <a class="top-nav-button" id="order-now-btn" href="./order.html">Order Now</a>
+    </div>
+    <div id="logo"><img src="../images/banner/logo.png"/></div>
+    <div class="third-container">
+        <a class="top-nav-button" href="../index.html">Home</a>
+        <a class="top-nav-button" href="./menu-pizza.html">Menu</a>
+        <a class="top-nav-button" href="./about.html">About</a>
+    </div>
+    <div id="hamburger-icon" onclick="hideShow()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+<div id="links">
+    <a class="top-nav-button " href="../index.html">Home</a>
+    <a class="top-nav-button " href="./menu-pizza.html">Menu</a>
+    <a class="top-nav-button" href="./about.html">About</a>
+</div>
+
+<p class="intro">
+    Order up!
+</p>
+
+<div class="timer">
+    <div id="pick-up">Pick up</div>
+    <div id="time"> 13:20</div>
+</div>
+
+<div class=" order-items">
+    <div class="order-single-item">
+        <img src="../images/pizza/Menu Items 01.png" alt="">
+        <p class="content-info">
+            Bianca&nbsp;chicken -
+            Bianca&nbsp;sauce,
+            vegan&nbsp;chicken,
+            basil.
+        </p>
+        <!-- container for adding toppings -->
+        <div class="toppings">
+            <h4>Add Toppings</h4>
+            <input type="checkbox" name="">Bianca&nbsp;sauce<br/>
+            <input type="checkbox" name="">Vegan&nbsp;chicken<br/>
+            <input type="checkbox" name="">Basil<br/>
+        </div>
+
+        <div class="toppings">
+            <h4>Remove Toppings</h4>
+            <input type="checkbox" name="">Bianca&nbsp;sauce<br/>
+            <input type="checkbox" name="">Vegan&nbsp;chicken<br/>
+            <input type="checkbox" name="">Basil<br/>
+        </div>
+    </div>
+
+
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-single-item">
+        <img src="../images/pizza/Menu Items 02.png" alt="">
+        <p class="content-info">
+            Gorgonzola -
+            Tomato&nbsp;sauce,
+            mozzarella,
+            gorgonzola,
+            and olives
+        </p>
+        <div class="toppings">
+            <h4>Add Toppings</h4>
+            <input type="checkbox" name="">Tomato&nbsp;sauce<br/>
+            <input type="checkbox" name="">Mozzarella<br/>
+            <input type="checkbox" name="">Gorgonzola<br/>
+            <input type="checkbox" name="">Olives<br/>
+        </div>
+        <div class="toppings">
+            <h4>Remove Toppings</h4>
+            <input type="checkbox" name="">Tomato&nbsp;sauce<br/>
+            <input type="checkbox" name="">Mozzarella<br/>
+            <input type="checkbox" name="">Gorgonzola<br/>
+            <input type="checkbox" name="">Olives<br/>
+        </div>
+    </div>
+
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/pizza/Menu Items 03.png" alt="">
+        <p class="content-info">
+            Vegetariana -
+            Tomato&nbsp;sauce,
+            mozzarella,
+            tomatoes,
+            olives,
+            basil,
+            shaved&nbsp;onions
+        </p>
+        <div class="toppings">
+            <h4>Add Toppings</h4>
+            <input type="checkbox" name="">Tomato&nbsp;sauce<br/>
+            <input type="checkbox" name="">Mozzarella<br/>
+            <input type="checkbox" name="">Tomatoes<br/>
+            <input type="checkbox" name="">Olives<br/>
+            <input type="checkbox" name="">Basil<br/>
+            <input type="checkbox" name="">Shaved&nbsp;onions<br/>
+        </div>
+        <div class="toppings">
+            <h4>Remove Toppings</h4>
+            <input type="checkbox" name="">Tomato&nbsp;sauce<br/>
+            <input type="checkbox" name="">Mozzarella<br/>
+            <input type="checkbox" name="">Tomatoes<br/>
+            <input type="checkbox" name="">Olives<br/>
+            <input type="checkbox" name="">Basil<br/>
+            <input type="checkbox" name="">Shaved&nbsp;onions<br/>
+        </div>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/pizza/Menu Items 04.png" alt="">
+        <p class="content-info">
+            White Gorgonzola -
+            Bianca sauce,
+            mozzarella
+            gorgonzola, and
+            olives
+        </p>
+        <div class="toppings">
+            <h4>Add Toppings</h4>
+            <input type="checkbox" name="">Bianca sauce<br/>
+            <input type="checkbox" name="">Mozzarella gorgonzola<br/>
+            <input type="checkbox" name="">Olives<br/>
+        </div>
+        <div class="toppings">
+            <h4>Add Toppings</h4>
+            <input type="checkbox" name="">Bianca sauce<br/>
+            <input type="checkbox" name="">Mozzarella gorgonzola<br/>
+            <input type="checkbox" name="">Olives<br/>
+        </div>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/pizza/Menu Items 05.png" alt="">
+        <p class="content-info">
+            Fattoria - Tomato sauce,
+            basil,
+            mozzarella, peppers,
+            olives, shaved
+            parmesan
+        </p>
+        <div class="toppings">
+            <h4>Add Toppings</h4>
+            <input type="checkbox" name="">Tomato sauce<br/>
+            <input type="checkbox" name="">Basil<br/>
+            <input type="checkbox" name="">Mozzarella<br/>
+            <input type="checkbox" name="">Peppers<br/>
+            <input type="checkbox" name="">Olives<br/>
+            <input type="checkbox" name="">Shaved parmesan<br/>
+        </div>
+        <div class="toppings">
+            <h4>Remove Toppings</h4>
+            <input type="checkbox" name="">Tomato sauce<br/>
+            <input type="checkbox" name="">Basil<br/>
+            <input type="checkbox" name="">Mozzarella<br/>
+            <input type="checkbox" name="">Peppers<br/>
+            <input type="checkbox" name="">Olives<br/>
+            <input type="checkbox" name="">Shaved parmesan<br/>
+        </div>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/salad/Menu Items 1.png" alt="">
+        <p class="content-info">
+            Summer Salad -
+            romaine lettuce,
+            feta, cucumbers,
+            red onions,
+            tomatos
+            capsicum
+            Choice of dressing
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/salad/Menu Items 2.png" alt="">
+        <p class="content-info">
+            Frisee & Chicory
+            lettuce -, garbanzo
+            beans, cucumber,
+            dried italian herbs
+            Choice of dressing
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/salad/Menu Items 3.png" alt="">
+        <p class="content-info">
+            House salad -
+            Frisee & Chicory
+            lettuce,
+            cucumber, cherry
+            tomatoes, red
+            dressing
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/salad/Menu Items 4.png" alt="">
+        <p class="content-info">
+            Squash and
+            zucchini salad -
+            Roasted squash
+            and zucchini, pine
+            nuts, arugula,
+            Balsamic dressing
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-single-item">
+        <img src="../images/salad/Menu Items 5.png" alt="">
+        <p class="content-info">
+            Avo salad -
+            Frisee & Chicory
+            lettuce, avocado,
+            cucumber,
+            choice of
+            dressing
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 01.png" alt="">
+        <p class="content-info">
+            Cheesy fries -
+            French fries, topped
+            with melted
+            Mozzarella
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 02.png" alt="">
+        <p class="content-info">
+            French Fries
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 03.png" alt="">
+        <p class="content-info">
+            Onion rings
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 04.png" alt="">
+        <p class="content-info">
+            Fried zucchini and
+            parsley dip
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 05.png" alt="">
+        <p class="content-info">
+            Rosemary
+            Lemonade
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="" id="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 06.png" alt="">
+        <p class="content-info">
+            Fizzy blood
+            orange soda
+            with fresh mint
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/slides/Menu Items 07.png" alt="">
+        <p class="content-info">
+            Pellegrino with
+            fresh lemon and
+            mint
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-single-item">
+        <img src="../images/drinks/Menu Items 01.png" alt="">
+        <p class="content-info">
+            Cola-Cola
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-single-item">
+        <img src="../images/drinks/Menu Items 02.png" alt="">
+        <p class="content-info">
+            Sprite
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-single-item">
+        <img src="../images/drinks/Menu Items 03.png" alt="">
+        <p class="content-info">
+            Pepsi
+        </p>
+    </div>
+    <div class="order-now">
+        <div class="container">
+            <div class="row">
+                <p>Select this item</p>
+                <label>
+                    <input type="checkbox" name="">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-now">
+        <a href="confirm.html">Place order</a>
+    </div>
+</div>
+</body>
+</html>

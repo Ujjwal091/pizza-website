@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title and stylesheets -->
+    <title>Menu | Slides</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Script for hamburger icon -->
+    <script src="../button.js"></script>
+</head>
+
+<body>
+<!-- Banner -->
+<div id="banner"></div>
+
+<!-- Top navigation -->
+<nav id="top-nav">
+    <div class="first-container">
+        <a class="top-nav-button" id="order-now-btn" href="./order.html">Order Now</a>
+    </div>
+
+    <div id="logo"><img src="../images/banner/logo.png"/></div>
+
+    <div class="third-container">
+        <a class="top-nav-button" href="../index.html">Home</a>
+        <a class="top-nav-button" href="./menu-pizza.html">Menu</a>
+        <a class="top-nav-button" href="./about.html">About</a>
+    </div>
+
+    <!-- Hamburger icon -->
+    <div id="hamburger-icon" onclick="hideShow()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</nav>
+
+<!-- Links section (hidden until hamburger icon is clicked) -->
+<div id="links">
+    <a class="top-nav-button " href="../index.html">Home</a>
+    <a class="top-nav-button " href="./menu-pizza.html">Menu</a>
+    <a class="top-nav-button" href="./about.html">About</a>
+</div>
+
+<!-- Intro section -->
+<p class="intro">
+    What's on the<br/>
+    Menu?!
+</p>
+
+<!-- Menu categories buttons -->
+<div class="menu-categories-btn">
+    <a href="menu-pizza.html" class="top-nav-button ">Pizza</a>
+    <a href="menu-salads.html" class="top-nav-button">Salads</a>
+    <a href="menu-slides.html" class="top-nav-button selected">Slides</a>
+    <a href="menu-drinks.html" class="top-nav-button">Drinks</a>
+</div>
+
+<!-- Menu items -->
+<div class="menu-items">
+    <div class="item">
+        <img src="../images/slides/Menu Items 01.png" alt="">
+        <p class="content-info">
+            Cheesy fries -
+            French fries, topped
+            with melted
+            Mozzarella
+        </p>
+    </div>
+
+    <div class="item">
+        <img src="../images/slides/Menu Items 02.png" alt="">
+        <p class="content-info">
+            French Fries
+        </p>
+    </div>
+
+    <div class="item">
+        <img src="../images/slides/Menu Items 03.png" alt="">
+        <p class="content-info">
+            Onion rings
+        </p>
+    </div>
+
+    <div class="item">
+        <img src="../images/slides/Menu Items 04.png" alt="">
+        <p class="content-info">
+            Fried zucchini and
+            parsley dip
+        </p>
+    </div>
+
+
+</div>
+</body>
+
+</html>
